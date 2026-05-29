@@ -1,0 +1,96 @@
+Per Copilot, these are some goals to try and acheive with this project: 
+
+TL;DR 
+proxmox+ansible
+     Configures set of VMs w/ automated services (DNS, Monitoring, Logging, backup, users, updates)
+DOCUMENTED ARCHITECTURE DIAGRAM & README - this may be generate-able by using something like nmap or libreNMS again
+
+Prometheus/Grafana/Loki/AlertManager - logging, metrics, observability
+
+Secure lab network w/ VLAN segmentation, policy based routing 
+
+Centralized Identity/SSO lab. 
+
+A backup + disaster recovery system with automated restores
+free software like Borg, Restic, Kopia, or PBS
+
+Extra Credit: Directory service Centralized logging Monitoring Ticketing (like OpenProject or Zammad) Basic CI/CD or automation Backups Maybe an internal wiki
+It’s like building the minimum viable infrastructure of a tech company.
+
+
+
+
+
+Verbose Response: 
+
+1. A fully automated homelab deployment (Ansible + Proxmox/ESXi/Hyper-V)
+Signals: automation mindset, virtualization, config management, repeatability
+Cost: $0 if you already run Proxmox or similar
+
+What you build:
+
+A GitHub repo containing an Ansible playbook that spins up and configures a set of VMs
+Automated provisioning of services (DNS, monitoring, logging agent, backup jobs, user accounts, updates)
+Documented architecture diagram + README
+
+2. A mini enterprise monitoring stack (Prometheus + Grafana + Loki + Alertmanager)
+Signals: observability, metrics, logging, infrastructure understanding
+Cost: free, uses containers
+
+What you build:
+
+A lightweight, production-style monitoring stack running in Docker or Podman
+Exporters on your VMs for CPU, disk, uptime, journald logs, etc.
+Dashboards that show real operational insight
+Alerting rules (email, Discord, Slack)
+The deliverable is a repo + screenshots showing you understand real systems health.
+
+3. A secure lab network with VLAN segmentation and policy-based routing
+Signals: networking, security, homelab architecture, practical real-world setups
+Cost: uses your existing router/switch or something like OPNsense/pfSense
+
+What you build:
+
+A multi-VLAN network (home, lab, DMZ, IoT)
+Firewall rules separating them
+Optional: WireGuard VPN into your lab
+Network diagram + documentation
+This shows you’re comfortable with enterprise-style network design.
+
+4. A centralized identity + SSO lab (FreeIPA, Keycloak, AD DS)
+Signals: identity management, authentication flows, IAM
+Cost: free with open-source components
+
+Possible goal:
+
+Stand up FreeIPA or Samba AD
+Integrate Keycloak for SSO
+Connect apps (Grafana, Gitea, Vaultwarden, Nextcloud)
+Document user provisioning and policies
+Hiring managers love seeing IAM experience because it’s real operational complexity.
+
+5. A backup + disaster recovery system with automated restores
+Signals: reliability engineering, planning, scripting, systems admin maturity
+Cost: free software like Borg, Restic, Kopia, or PBS
+
+What you build:
+
+Automated per-host backups
+Off-site copy (could be just another machine in a different room)
+A documented “restore from zero” process
+Validated restore tests
+This is extremely high-signal because most junior devs never think about backups.
+
+6. A full “company-in-a-box” environment
+This is a way to show broad systems experience.
+
+You build a small but realistic IT environment with:
+
+Directory service
+Centralized logging
+Monitoring
+Ticketing (like OpenProject or Zammad)
+Basic CI/CD or automation
+Backups
+Maybe an internal wiki
+It’s like building the minimum viable infrastructure of a tech company.
